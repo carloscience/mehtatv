@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Amit Mehta</title>
+<link rel="icon" type="image/ico" href="http://amitmehta.tv/favicon.ico">
+<meta name="description" content="As a director, Amit Mehta is drawn toward the awkward, the absurd, the awkwardly absurd and the absurdly awkward. He has a passion for performance minimalism rooted in character and situation.">
+<meta property="og:description" content="As a director, Amit Mehta is drawn toward the awkward, the absurd, the awkwardly absurd and the absurdly awkward. He has a passion for performance minimalism rooted in character and situation.">
+<meta property="og:image" content="http://amitmehta.tv/images/amit_mehta_logo_og.png">
+<meta property="og:url" content="http://amitmehta.tv">
+<meta property="og:title" content="Amit Mehta">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+<!-- Add mousewheel plugin (this is optional) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+	<section id="page1">
+		<div id="logo">
+			<img src="images/amit_mehta_logo2.png" />
+		</div>
+		<ul>
+			<li><a id="home" href="#">Home<div class="strikethrough"></div></a></li>
+			<li><a id="work" href="#">Work<div class="strikethrough"></div></a></li>
+			<li><a id="about" href="#">About<div class="strikethrough"></div></a></li>
+			<li><a id="contact" href="#">Contact<div class="strikethrough"></div></a></li>
+		</ul>
+        <div id="padDown">
+            <div id="stamp"><img class="stamp_desktop" src="images/amitStamp.png" /></div><div class="amit_copyright">&copy; Amit Mehta 2014.</div>
+        </div>
+	</section>
+    <a name="id2"></a>
+	<section id="page2">
+		<h1>Work</h1>
+        <div class="uline"></div>
+		<div id="thumbnails1">
+		</div>
+		<div id="thumbnails2">
+		</div>
+		<div id="thumbnails3">
+		</div>
+		<div id="thumbnails4">
+		</div>
+		<h2 class="more_work2"><a href="#">More<br/><img src="images/arrow_down.png" /></a></h2>
+		<h2 class="more_work3"><a href="#">More<br/><br/><img src="images/arrow_down.png" /></a></h2>
+		<h2 class="previous_work2"><a href="#"><img class="arrow_up" src="images/arrow_up.png" /><br/>Less</a></h2>
+	</section>
+    <a name="id3"></a>
+	<section id="page3">
+        <div id="headshot_mobile">
+                <img src="images/amitPhoto_headshot3.png" />
+          </div>
+		<h1>About</h1>
+        <div class="uline"></div>
+        <article id="about_detail">
+		  <div id="bio">
+		      <p>As a director, Amit Mehta is drawn toward the awkward, the absurd, the awkwardly absurd and the absurdly awkward. He has a passion for performance minimalism rooted in character and situation.</p>
+		      <p>During earlier hyphenate forays in theater, film and television, Amit logged thousands of laptop hours in numerous coffeehouses, co-wrote the film <em>Scenes of the Crime</em> starring Jeff Bridges, shared screen time with chimpanzees, and was possibly typecast as Saddam Hussein’s grandson.</p>
+		      <p>Having previously lived in Milwaukee, New Delhi and Philadelphia, Amit now unreservedly calls Los Angeles home. His kryptonite is yellow cake with chocolate icing. Not the fancy bakery kind; just down and dirty, out of a box.</p>
+		  </div>
+		  <div id="headshot">
+			<img src="images/amitPhoto_headshot3.png" />
+		  </div>
+        </article>
+        <div id="caption_right">
+            Photo courtesy Mark Martin
+        </div>
+	</section>
+    <a name="id4"></a>
+	<section id="page4">
+        <div id="page-wrapper">
+        <div class="horizontal_line"></div><h1 class="header_inline">Get in touch</h1><div class="horizontal_line"></div>
+        <div id="form-wrapper">
+            <div id="form-messages"></div>
+        
+            <form id="ajax-contact" method="post" action="mailer.php">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+
+                <div class="field">
+                    <label class="message_label" for="message">Message</label>
+                    <textarea id="message" name="message" rows="7" required></textarea>
+                </div>
+
+                <div class="field" id="field_btn">
+                    <button type="submit">Submit</button>
+                </div>
+                <div id="representation_shift">
+                    <div class="represent">Representation</div> <a href="http://www.interrogate.com/directors/amit-mehta/work/bmw-close-call" target="_blank" class="interrogate"><img class="interrogate_retina" src="images/interrogateLogo.png" /></a>
+                    <a href="http://thirtytv.com/#contact-inline" target="_blank" class="thirty"><img class="thirty_retina" src="images/thirtyLogo.png" /></a>
+                    
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <img src="images/la_image_contactpage3.jpg" class="bg" />
+    <div class="site_design">
+                        <span>Site Design</span>
+                        <a class="zoraya" href="http://sarahzoraya.com" target="_blank"><img class="zoraya_retina" src="images/zoraya_retina.png" /></a>
+                    </div>
+    </section>
+	
+	<script src="js/froogaloop2.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/detectmobilebrowser.js"></script>
+    <script src="js/waypoints.min.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
