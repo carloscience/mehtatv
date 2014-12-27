@@ -199,7 +199,7 @@ ul {
 }
 
 .interrogate {
-	background: url('../images/interrogateLogo_desktop.png');
+	background: url('../images/interrogate_logo.png');
 	width: 125px;
 	height: 21px;
 }
@@ -218,8 +218,8 @@ ul {
 }
 
 #representation_shift a {
-	margin-top: 20px;
 	display: block;
+	margin-bottom: 20px;
 }
 
 #representation_shift a.zoraya {
@@ -233,6 +233,7 @@ ul {
 	text-transform: uppercase;
 	margin-right: 8px;
 	font-size: 1.4em;
+	margin-bottom: 20px;
 }
 
 .site_design {

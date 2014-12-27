@@ -45,7 +45,9 @@ $(document).ready(function() {
 
 		});
 
-		$.getJSON('http://vimeo.com/api/v2/album/2883071/videos.json?page=2', function(data) {
+		$('.more_work2').on('click', function(e) {
+			e.preventDefault();
+			$.getJSON('http://vimeo.com/api/v2/album/2883071/videos.json?page=2', function(data) {
 			for (row in data) {
 				var index1 = data[row].title.indexOf("\"");
 				var index2 = data[row].title.lastIndexOf("\"") + 10;
@@ -86,6 +88,9 @@ $(document).ready(function() {
 			});
 		}
 		});
+	});
+
+		
 
 		$('#page1').waypoint(function(direction) {
 			$('#page1 #home .strikethrough').show();
