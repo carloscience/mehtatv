@@ -178,7 +178,7 @@ ul {
 	max-width: 100%;
 }
 
-.stamp_retina, .interrogate_retina, .thirty_retina, .zoraya_retina {
+.stamp_retina, .interrogate_retina, .thirty_retina, .zoraya_retina, .vf_retina {
 	display: none;
 	margin: 0 auto;
 }
@@ -199,27 +199,40 @@ ul {
 }
 
 .interrogate {
-	background: url('../images/interrogate_logo.png');
-	width: 125px;
-	height: 21px;
+	background: url('../images/interrogateLogo3.png');
+	width: 100px;
+	height: 12px;
 }
 
 .thirty {
-	background: url('../images/thirtyLogo_desktop.png');
-	width: 90px;
+	background: url('../images/thirtyLogo2.png');
+	width: 58px;
 	height: 21px;
+	display: block;
+}
+
+.view_finder {
+	background: url('../images/viewFinder_desktop.png');
+	width: 131px;
+	height: 15px;
+	display: block;
 }
 
 #representation_shift {
 	width: 350px;
-	margin-left: 650px;
+	margin-left: 620px;
 	margin-top: -30px;
 	text-align: left;
 }
 
-#representation_shift a {
+#representation_shift .interrogate {
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+}
+
+#representation_shift .thirty {
+	display: block;
+	margin-bottom: 12px;
 }
 
 #representation_shift a.zoraya {
@@ -233,7 +246,7 @@ ul {
 	text-transform: uppercase;
 	margin-right: 8px;
 	font-size: 1.4em;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .site_design {
@@ -555,7 +568,7 @@ ul {
 	margin: 0 auto;
 	position: relative;
 	top: -9px;
-	height: 630px;
+	height: 650px;
 }
 
 #ajax-contact {
@@ -568,7 +581,7 @@ ul {
 		height: 750px;
 	}
 	#representation_shift {
-		margin-top: 110px;
+		margin-top: 40px;
 	}
 	#page-wrapper {
 		padding-top: 95px;
@@ -603,6 +616,12 @@ ul {
 	.site_design {
 		display: none;
 		/*padding-top: 10px;*/
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	#representation_shift {
+		margin-top: -65px;
 	}
 }
 
@@ -698,7 +717,7 @@ ul {
 		border-right: none;
 	}
 
-	#representation_shift {
+	/*#representation_shift {
 		width: 100%;
 		margin-left: 0;
 		text-align: right;
@@ -708,6 +727,20 @@ ul {
 
 	#representation_shift a {
 		margin-left: 535px;
+	}*/
+}
+
+@media only screen and (max-width: 830px) {
+	#representation_shift {
+		margin-top: -75px;
+		margin-left: 600px;
+	}
+
+	#representation_shift .interrogate, #representation_shift .represent {
+		margin-bottom: 10px;
+	}
+	#representation_shift .thirty {
+		margin-bottom: 7px;
 	}
 }
 
@@ -720,6 +753,11 @@ ul {
 @media only screen and (max-width: 800px) {
 	#representation_shift {
 		top: -20px;
+		margin-left: 450px;
+	}
+
+	#form-wrapper {
+		padding-top: 20px;
 	}
 }
 
@@ -735,11 +773,12 @@ ul {
 	}
 	#representation_shift {
 		width: 92%;
+		margin-top: -67px;
 	}
 
-	#representation_shift a {
+	/*#representation_shift a {
 		margin-left: 483px;
-	}
+	}*/
 
 	#representation_shift {
 		top: 70px;
@@ -763,11 +802,12 @@ ul {
 
 	#representation_shift {
 		width: 83%;
+		margin-left: 400px;
 	}
 
-	#representation_shift a {
+	/*#representation_shift a {
 		margin-left: 422px;
-	}
+	}*/
 
 	#field_btn {
 		margin-right: 0;
@@ -788,13 +828,15 @@ ul {
 	}
 	#representation_shift {
 		width: 68%;
+		margin-left: 123px;
+		margin-top: 0px;
 		/*position: relative;
 		top: 40px;*/
 	}
 
-	#representation_shift a {
+	/*#representation_shift a {
 		margin-left: 321px;
-	}
+	}*/
 
 	/*.site_design {
 		padding-top: 35px;
@@ -815,7 +857,7 @@ ul {
 	#representation_shift a {
 	margin-left: auto !important;
 	margin-right: auto !important;
-	margin-top: 10px !important;
+	/*margin-top: 10px !important;*/
 	text-align: center;
 
 	}
@@ -928,6 +970,10 @@ ul {
 		border: 12px solid #f0f0eb;
 	}
 
+	#page4 #page-wrapper {
+		padding-top: 25px;
+	}
+
 	.field input, .field textarea {
 		width:83%;
 		margin-left: 8.5%;
@@ -940,6 +986,9 @@ ul {
 	#representation_shift {
 		width: 100%;
 		text-align: center;
+	}
+	#representation_shift .represent {
+		margin-left: 4px;
 	}
 	.spot_title {
 		top: 95px;
@@ -1005,7 +1054,7 @@ ul {
 		height: 100%;
 	}
 
-	.thirty_retina {
+	.thirty_retina, .vf_retina {
 		display: block;
 		width: 100%;
 		height: 100%;
@@ -1017,7 +1066,7 @@ ul {
 		height: 100%;
 	}
 
-	.zoraya {
+	.zoraya, .view_finder, .thirty, .interrogate {
 		background: transparent;
 	}
 
