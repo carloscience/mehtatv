@@ -18,7 +18,7 @@ $(document).ready(function() {
     			$('html,body').animate({scrollTop: aTag.offset().top},'slow');
 		}
 		
-		$.getJSON('http://vimeo.com/api/v2/album/2883071/videos.json?page=1', function(data) {
+		$.getJSON('https://vimeo.com/api/v2/album/2883071/videos.json?page=1', function(data) {
 			$('.preloader').fadeOut('fast');
 			for (row in data) {
 				var index1 = data[row].title.indexOf("\"");
@@ -48,7 +48,7 @@ $(document).ready(function() {
 
 		$('.more_work2').on('click', function(e) {
 			e.preventDefault();
-			$.getJSON('http://vimeo.com/api/v2/album/2883071/videos.json?page=2', function(data) {
+			$.getJSON('https://vimeo.com/api/v2/album/2883071/videos.json?page=2', function(data) {
 			for (row in data) {
 				var index1 = data[row].title.indexOf("\"");
 				var index2 = data[row].title.lastIndexOf("\"") + 10;
@@ -69,7 +69,7 @@ $(document).ready(function() {
 		}
 		});
 
-		$.getJSON('http://vimeo.com/api/v2/album/2883071/videos.json?page=3', function(data) {
+		$.getJSON('https://vimeo.com/api/v2/album/2883071/videos.json?page=3', function(data) {
 			for (row in data) {
 				var index1 = data[row].title.indexOf("\"");
 				var index2 = data[row].title.lastIndexOf("\"") + 10;
