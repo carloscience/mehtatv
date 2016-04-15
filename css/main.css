@@ -52,6 +52,7 @@ a, a:hover, a:focus, a:active {
 }
 
 #page2 {
+	position: relative;
 	padding-top: 60px;
 	background-color: #f0f0eb;
 	width: 100%;
@@ -107,6 +108,14 @@ ul {
 	width: 22px;
 	margin: 0 auto 40px auto;
 	border-top: 1px solid #000;
+}
+
+.preloader {
+	position: absolute;
+	right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #logo {

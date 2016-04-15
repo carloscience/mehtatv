@@ -19,6 +19,7 @@ $(document).ready(function() {
 		}
 		
 		$.getJSON('http://vimeo.com/api/v2/album/2883071/videos.json?page=1', function(data) {
+			$('.preloader').fadeOut('fast');
 			for (row in data) {
 				var index1 = data[row].title.indexOf("\"");
 				var index2 = data[row].title.lastIndexOf("\"") + 10;
