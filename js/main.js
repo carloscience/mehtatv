@@ -1,3 +1,6 @@
+var d = new Date();
+var year = d.getFullYear();
+
 $(document).ready(function() {
 
 		var IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
@@ -89,9 +92,12 @@ $(document).ready(function() {
 			});
 		}
 		});
-	});
 
 		
+
+	});
+
+		$('.year').text(year);
 
 		$('#page1').waypoint(function(direction) {
 			$('#page1 #home .strikethrough').show();
